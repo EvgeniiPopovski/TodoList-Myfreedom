@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Todo List</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./styles.css" />
+	</head>
+	<body class="container-center">
+		<h1 class="todoes__header">Список задач</h1>
+
+		<div class="todoes__wrapper">
+			<!-- TODO ТЕКСТОВЫЙ ПOИСК ЗАДАЧ -->
+			<div class="search form">
+				<input type="text" class="search__todoes input" placeholder="Поиск по словам" />
+			</div>
+
+			<!-- TODO: ФИЛЬТР СПИСКА  ЗАДАЧ -->
+			<ul class="filter">
+				<li class="filter__item active">Все</li>
+				<li class="filter__item">Выполненные</li>
+				<li class="filter__item">Не выполненные</li>
+			</ul>
+
+			<!-- TODO:  СПИСОК ЗАДАЧ (САМИ ЗАДАЧИ ) -->
+			<div class="todoes__content">
+				<ul class="todoes__list">
+				</ul>
+			</div>
+
+			<div class="todoes__submit form">
+				<input type="text" class="todoes__input input" placeholder="Введите задачу" />
+				<button class="todoes__button button">Добавить</button>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="./todos2.js"></script>
+	</body>
+</html>

@@ -1,0 +1,148 @@
+/* ! ОБЩИЕ */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+	color: black;
+}
+.done {
+	text-decoration: line-through;
+	opacity: 0.6;
+}
+.hidden {
+	display: none;
+}
+.form {
+	display: flex;
+	width: 100%;
+	height: 40px;
+	margin-top: 8px;
+	justify-content: space-between;
+}
+.input {
+	width: 70%;
+	height: 100%;
+	border-radius: 4px;
+	padding-left: 10px;
+	font-size: 15px;
+	margin-bottom: 8px;
+}
+.input::placeholder {
+	font-size: 15px;
+}
+input[type="checkbox"] {
+	transform: scale(1.3);
+	opacity: 0.9;
+	cursor: pointer;
+	margin-left: 4px;
+}
+.button {
+	width: 29%;
+	font-size: 15px;
+	border-radius: 4px;
+	background-color: lightskyblue;
+	transition: 0.2s linear;
+}
+.button:hover {
+	background-color: blue;
+	color: white;
+}
+
+.container-center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.todoes__wrapper {
+	width: 750px;
+	padding: 8px;
+}
+
+.todoes__header {
+	font-family: "Pattaya", sans-serif;
+    font-size: 50pt;
+    line-height: 50px;
+	border-bottom: 3px solid lightgray;
+	text-shadow: 3px 0 3px lightgray, 0 3px 3px lightgray, -3px 0 3px lightgray, 0 -3px 3px lightgray;
+}
+
+/* ! ФИЛЬТР */
+.filter {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	color: white;
+	list-style: none;
+}
+.filter__item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 1;
+	width: 25%;
+	height: 30px;
+	cursor: pointer;
+	background-color: white;
+	border: 1px solid lightskyblue;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	transition: 0.2s ease-in-out;
+}
+
+.filter__item.active {
+	text-decoration: underline;
+	flex-grow: 1;
+	font-weight: bold;
+	background-color: lightskyblue;
+	border-bottom: 1px solid lightblue;
+}
+
+/* ! ПОИСК */
+.search {
+	margin-bottom: 8px;
+}
+.search__todoes.input {
+	width: 100%;
+}
+.search__todoes:focus {
+	border: 1px solid lightblue;
+}
+
+/* ! СПИСОК ТУДУШЕК */
+
+.todoes__items {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: lightskyblue;
+	padding: 0px  10px 0px 20px;
+	margin: 3px 0px;
+}
+.todoes__text {
+    flex-grow: 1;
+    margin: 10px 0px ;
+}
+.todoes__tools {
+	display: inline-block;
+	height: 20px;
+}
+.tools {
+	background-color: lightskyblue;
+	border: none;
+	cursor: pointer;
+}
+.change__img,
+.delete__img {
+	width: 20px;
+	height: 20px;
+}
+
+.todoes__changeField {
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 4px 0px;
+}
